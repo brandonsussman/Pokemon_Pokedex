@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+*{
+padding: 0;
+margin: 0;
+
+}
+.pokeName{
+  padding-top: 1.5rem;
+  padding-left: 6.5rem;
+}
+body{
+background-color: #c8fce5;
+}
+.welcome{
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+
+.content {
+  
+  display: grid;
+
+
+  
+  grid-template-columns: auto auto auto;
+}
+@media  (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }}
+.image {
+  margin-block-start: auto;
+  background-color: #22187a;
+
+  width: 250px; 
+  height: 250px;
+
+
+}
+.imageDiv{
+  padding: 1.5rem;
+}
+
+
+
+.abilities{
+
+margin: auto;
+display: flex;
+justify-content: Left;
+align-items: left;
+margin-top: 1rem;
+}
+.abilities .group{
+text-transform: capitalize;
+background-color: #22187a;
+color: white;
+padding: 0.10rem;
+font-size: 12px;
+border-radius: 8px;
+margin-left: 0.1rem;
+}
+.base-stat{
+  
+text-transform: uppercase;
+align-content: bottom;
+margin-top: 2rem;
+}
+
+.btn-group button{
+  outline: none;
+  border: none;
+  width: 200px;
+  padding: 0.6rem 0;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  position: relative;
+    left: 600px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #22187a;
+  border-radius: 15px;
+  
+  }
+  @media  (max-width: 600px) {
+    .btn-group button{
+   
+    
+      left: 125px;
+    }}
+
+  body{
+    margin:0;
+    padding:0;
+    background:#29b6f6;
+  }
+  .flip-card {
+    
+    font-size: 12px;
+    text-transform: capitalize;
+    
+    margin: 60px;
+
+    
+    
+    border-radius: 10px;
+    
+    padding: 1rem;
+    
+    
+    
+    
+    width: 300px;
+    height: 300px
+
+ 
+  }
+
+
+  
+  .flip-card-inner {
+    
+    
+    font-size: 12px;
+    text-transform: capitalize;
+    width: 300px;
+    
+    
+ 
+    padding: 0rem;
+    
+
+    
+    box-sizing: border-box;
+    
+ 
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  
+  .flip-card-front, .flip-card-back {
+    border:1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    position: fixed;
+    background-color:#B9F3E4;
+    justify-items: right;
+    color: black;
+    
+  }
+  
+  .flip-card-back {
+    position: fixed;
+
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  
+  }
+ 
